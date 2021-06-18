@@ -1,0 +1,8 @@
+{
+    "env": {
+      "email": "ninjacypress@test.com",
+      "password": "cypresstest"
+    },
+    "baseUrl": "http://tutorialsninja.com/demo",
+    "defaultCommandTimeout": 15000
+  }
