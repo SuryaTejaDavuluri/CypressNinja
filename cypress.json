@@ -1,8 +1,9 @@
 {
-    "env": {
-      "email": "ninjacypress@test.com",
-      "password": "cypresstest"
-    },
-    "baseUrl": "http://tutorialsninja.com/demo",
-    "defaultCommandTimeout": 15000
-  }
+  "env": {
+    "email": "ninjacypress@test.com",
+    "password": "cypresstest"
+  },
+  "baseUrl": "http://tutorialsninja.com/demo",
+  "defaultCommandTimeout": 15000,
+  "projectId": "b1qxwm"
+}
