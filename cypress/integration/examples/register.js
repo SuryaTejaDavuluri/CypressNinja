@@ -12,9 +12,9 @@ before(function () {
 
 })
 
-describe('Tutorials Ninja', function () {
+describe('Tutorials Ninja Registration', function () {
 
-    it('Register', function () {
+    it('Register New Account', function () {
 
         cy.get('#logo').should('include.text','Your Store')
         cy.get('[title="My Account"]').click()

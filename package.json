@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx cypress run --record --key 9fbd1fbf-473d-4d7b-b9bd-8b81eb2a31aa -- spec 'cypress\\integration\\examples\\*.js'",
+    "testhead": "npx cypress run --record --key 9fbd1fbf-473d-4d7b-b9bd-8b81eb2a31aa --headed -- spec 'cypress\\integration\\examples\\*.js'"
   },
   "author": "Ninja",
   "license": "ISC",
