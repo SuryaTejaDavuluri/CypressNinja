@@ -58,21 +58,33 @@ Cypress.Commands.add('Login', function (email, password) {
 
 
 Cypress.Commands.add('ClearCart', function () {
-    cy.get('[title="Remove"]').its('length').then(function (el) {
-        let count = el
-        cy.log(count)
-        let i = 0
-        while (i <= count) {
-            cy.get('#cart').click()
-            cy.get('#cart').find('.text-center').then(function (el1) {
-                let empty = el1.text()
-                cy.log(empty)
-                if (empty.indexOf("empty") == -1) {
-                    cy.get('[title="Remove"]').eq(0).click()
-                    cy.wait(3000)
+
+    // cy.get('#cart').click()
+    cy.get('#cart').find('.text-center').then(function (el) {
+        let empty = el.text()
+        cy.log(empty)
+        if (empty.includes("empty")) {
+            cy.get('#logo').click()
+        }
+        else{
+            cy.get('[title="Remove"]').its('length').then(function (el1) {
+                let count = el1
+                cy.log(count)
+                let i = 0
+                while (i <= count) {
+                    cy.get('#cart').click()
+                    cy.get('#cart').find('.text-center').then(function (el2) {
+                        let empty1 = el2.text()
+                        cy.log(empty1)
+                        if (empty1.indexOf("empty") == -1) {
+                            cy.get('[title="Remove"]').eq(0).click()
+                            cy.wait(3000)
+                        }
+                    })
+                    i++
                 }
             })
-            i++
+
         }
     })
 })
