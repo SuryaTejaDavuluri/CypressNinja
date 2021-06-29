@@ -1,5 +1,50 @@
 {
-  "name": "Using fixtures to represent data",
-  "email": "hello@cypress.io",
-  "body": "Fixtures are a great way to mock data for responses to routes"
+  "gadget": [
+      {
+          "Product": "Desktops",
+          "Model": []
+      },
+      {
+          "Product": "Laptop",
+          "Model": [
+              "HP LP3065",
+              "MacBook Pro",
+              "Sony VAIO"
+          ]
+      },
+      {
+          "Product": "Components",
+          "Model": [
+              "Samsung SyncMaster 941BW"
+          ]
+      },
+      {
+          "Product": "Tablets",
+          "Model": []
+      },
+      {
+          "Product": "Software",
+          "Model": []
+      },
+      {
+          "Product": "Phones",
+          "Model": [
+              "HTC Touch HD",
+              "Palm Treo Pro"
+          ]
+      },
+      {
+          "Product": "Cameras",
+          "Model": [
+              "Nikon D300"
+          ]
+      },
+      {
+          "Product": "MP3",
+          "Model": [
+              "iPod Classic",
+              "iPod Nano"
+          ]
+      }
+  ]
 }

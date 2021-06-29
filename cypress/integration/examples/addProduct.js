@@ -4,6 +4,7 @@ before(function () {
 
     cy.clearCookies()
     cy.visit('')
+    cy.clearCookie('OCSESSID')
 
     let email = Cypress.env('email')
     let password = Cypress.env('password')
@@ -14,9 +15,9 @@ before(function () {
 
 })
 
-// after(function(){
-//     cy.clearCookie('OCSESSID')
-// })
+after(function(){
+    cy.clearCookie('OCSESSID')
+})
 
 describe('Tutorials Ninja Shopping', function () {
 

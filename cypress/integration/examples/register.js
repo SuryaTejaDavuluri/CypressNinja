@@ -4,6 +4,7 @@ before(function () {
 
     cy.clearCookies()
     cy.visit('')
+    cy.clearCookie('OCSESSID')
 
     let email = Cypress.env('email')
     let password = Cypress.env('password')
