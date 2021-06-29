@@ -34,6 +34,7 @@ describe('Tutorials Ninja Registration', function () {
         cy.get('[name="agree"]').check()
         cy.get('[value="Continue"]').click()
         cy.get('[id="content"]').should('include.text','Your Account Has Been Created!')
+        cy.clearCookie('OCSESSID')
         
     })
 })
