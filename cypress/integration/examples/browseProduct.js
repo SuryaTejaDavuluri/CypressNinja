@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-let device = require('C:/Users/RC08508/CypressNinja/cypress/fixtures/prod.json')
+let device = require('../../fixtures/prod.json')
 
 before(function () {
 
